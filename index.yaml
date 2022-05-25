@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  ovo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-25T15:54:24.002033233-03:00"
+    description: A Helm chart for Kubernetes
+    digest: 9ea995cc5b72b33351baf133a42bdc859ef7e6a4e920e8ecfe61af4139bb3954
+    name: ovo
+    type: application
+    urls:
+    - https://charts.ascsystem.com.br/ovo-0.1.0.tgz
+    version: 0.1.0
+  pombo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-25T15:54:24.002438874-03:00"
+    description: A Helm chart for Kubernetes
+    digest: 1797d102a30065099c4de9893d6ad8b15f196efc1b814ed4290fb182064dc14a
+    name: pombo
+    type: application
+    urls:
+    - https://charts.ascsystem.com.br/pombo-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-05-25T15:54:24.001494987-03:00"
