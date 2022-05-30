@@ -47,6 +47,7 @@ service:
 ingress:
   enabled: false
   annotations: {}
+  ingressClassName: ""
   labels: {}
   hosts:
     - host: kube-opex-analytics.local
