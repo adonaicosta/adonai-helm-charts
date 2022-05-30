@@ -3,22 +3,11 @@ entries:
   kube-opex-analytics:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2022-05-30T13:56:28.130402536-03:00"
+    created: "2022-05-30T13:59:04.587817605-03:00"
     description: Helm chart for Kubernetes Opex Analtytics
-    digest: 57bff39cc9f71e279d9a4d68088b45d2d31af97216fc3153a3c9835af26d3d7e
+    digest: 3870c659852c9ef05df7f4290a30ed27520a726b88546787dff342a7e1e1b639
     name: kube-opex-analytics
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/kube-opex-analytics-22.02.3.tgz
     version: 22.02.3
-  pombo:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-05-30T13:56:28.130863241-03:00"
-    description: A Helm chart for Kubernetes
-    digest: 3e37ea886469287483a9ae3d2c9c498a0e939b9d557388d2a502b06e32b71fe7
-    name: pombo
-    type: application
-    urls:
-    - https://adonaicosta.github.io/adonai-helm-charts/pombo-0.1.0.tgz
-    version: 0.1.0
-generated: "2022-05-30T13:56:28.129679622-03:00"
+generated: "2022-05-30T13:59:04.587196273-03:00"
