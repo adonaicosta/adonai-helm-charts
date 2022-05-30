@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  amarelo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-30T13:36:34.749375704-03:00"
+    description: A Helm chart for Kubernetes
+    digest: da94578eade4cd3ae61d5e62b4ac5aa75d369ac52588f28c3c4ab2cdef9e0630
+    name: amarelo
+    type: application
+    urls:
+    - https://adonaicosta.github.io/adonai-helm-charts/amarelo-0.1.0.tgz
+    version: 0.1.0
   azul:
   - apiVersion: v2
     appVersion: 1.16.1
-    created: "2022-05-30T12:16:22.330541696-03:00"
+    created: "2022-05-30T13:36:34.75039694-03:00"
     description: A Helm chart for Kubernetes
     digest: 99048d253ab17aa50ff2f94e83d0ff7ef6e0cc54b67b2fdb75b1a6e99aa475e3
     name: azul
@@ -13,7 +24,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-05-30T12:16:22.330148464-03:00"
+    created: "2022-05-30T13:36:34.749926321-03:00"
     description: A Helm chart for Kubernetes
     digest: 0a361c2cd3d11bed7e703bc4982222a27e469d1aa39b0624c9879ee4bd76c7b8
     name: azul
@@ -24,9 +35,9 @@ entries:
   kube-opex-analytics:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2022-05-30T12:16:22.330965359-03:00"
+    created: "2022-05-30T13:36:34.750941955-03:00"
     description: Helm chart for Kubernetes Opex Analtytics
-    digest: 3f0c0bb9027bf414161421c0c168bae90c6b211766b2d7bf5579a39e7c04b397
+    digest: 1c0e07938077d0ee855761a4fb0ddca890c2510d435418ec1230afc5fd9fd160
     name: kube-opex-analytics
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/kube-opex-analytics-22.02.3.tgz
@@ -34,7 +45,7 @@ entries:
   ovo:
   - apiVersion: v2
     appVersion: 1.16.2
-    created: "2022-05-30T12:16:22.332162323-03:00"
+    created: "2022-05-30T13:36:34.752525812-03:00"
     description: A Helm chart for Kubernetes
     digest: eccaa7cdaf33cd0400daa2dc295e2906eb6f4ddc474025a042f84bb4b88a4b9f
     name: ovo
@@ -44,7 +55,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.1
-    created: "2022-05-30T12:16:22.331774597-03:00"
+    created: "2022-05-30T13:36:34.752032023-03:00"
     description: A Helm chart for Kubernetes
     digest: 77604eef6cb19d0acd45d34e8b36035d2d33b33e3a9aa20ea13409e7a829f1fe
     name: ovo
@@ -54,7 +65,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-05-30T12:16:22.331387213-03:00"
+    created: "2022-05-30T13:36:34.75150731-03:00"
     description: A Helm chart for Kubernetes
     digest: 9ea995cc5b72b33351baf133a42bdc859ef7e6a4e920e8ecfe61af4139bb3954
     name: ovo
@@ -65,7 +76,7 @@ entries:
   pombo:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-05-30T12:16:22.332603831-03:00"
+    created: "2022-05-30T13:36:34.752993384-03:00"
     description: A Helm chart for Kubernetes
     digest: 1797d102a30065099c4de9893d6ad8b15f196efc1b814ed4290fb182064dc14a
     name: pombo
@@ -73,4 +84,4 @@ entries:
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/pombo-0.1.0.tgz
     version: 0.1.0
-generated: "2022-05-30T12:16:22.329579072-03:00"
+generated: "2022-05-30T13:36:34.748636846-03:00"
