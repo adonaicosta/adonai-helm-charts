@@ -3,9 +3,9 @@ entries:
   basic-app:
   - apiVersion: v2
     appVersion: 0.0.7
-    created: "2024-02-12T15:13:03.728212418-03:00"
+    created: "2024-02-12T15:17:35.625334463-03:00"
     description: A Helm chart for simple Kubernetes applications
-    digest: 94c3140ec45c0e90c72b1ea9f0e217ce427d86c0784f6bf03ec7a31996be21d4
+    digest: 984f1c716ed36e22a43aea28197ae8c699c079834c949c442b4064d5a4e796f5
     name: basic-app
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2024-02-12T15:13:03.727615774-03:00"
+    created: "2024-02-12T15:17:35.62485183-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: 7cd00a1a2ff21794b574708097965ce362b9f159d1eb8ef0eeb941fb927e5706
     name: basic-app
@@ -23,7 +23,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2024-02-12T15:13:03.727057268-03:00"
+    created: "2024-02-12T15:17:35.624432116-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: c22111f8156df8887799d56527ec5af7c07071e8e9992e61845e80947731943d
     name: basic-app
@@ -34,9 +34,9 @@ entries:
   kube-opex-analytics:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2024-02-12T15:13:03.728656002-03:00"
+    created: "2024-02-12T15:17:35.6256948-03:00"
     description: Helm chart for Kubernetes Opex Analtytics
-    digest: 0693e89234a22427ee9f6186777d715eb9035a1f07c038ab613f2912bb7636b0
+    digest: 7a3723ad9f6643ea85ddc3f14ad39989101db9f6b255ea00ce9510ce75f94da1
     name: kube-opex-analytics
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/kube-opex-analytics-22.02.3.tgz
@@ -44,9 +44,9 @@ entries:
   kubed:
   - apiVersion: v1
     appVersion: v0.13.2
-    created: "2024-02-12T15:13:03.729237779-03:00"
+    created: "2024-02-12T15:17:35.626120182-03:00"
     description: Config Syncer by AppsCode - Kubernetes daemon
-    digest: 77f65a6367fad4e775262cdd48abab5b6310c054051146f2cc772776d0fda632
+    digest: 562745ed449b7aba504b2256d2e81bf315be4ecba4407505b9d28f2ac9f2fd1a
     home: https://github.com/kubeops/config-syncer
     icon: https://cdn.appscode.com/images/products/kubed/icons/android-icon-192x192.png
     maintainers:
@@ -61,9 +61,9 @@ entries:
   kubesynca:
   - apiVersion: v1
     appVersion: v1
-    created: "2024-02-12T15:13:03.730451993-03:00"
+    created: "2024-02-12T15:17:35.626522477-03:00"
     description: Sincronizador de cm e secs
-    digest: 3e2212efd0f887018fd146452c93762daf20778d892dd089d48e20c8163c69aa
+    digest: c4f38fd884a4a79cf54a6942f69dfb6d6fbf6d4ad552c1f6192ae42b196949dd
     home: https://
     icon: https://
     maintainers:
@@ -75,4 +75,4 @@ entries:
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/kubesynca-v1.tgz
     version: v1
-generated: "2024-02-12T15:13:03.726314638-03:00"
+generated: "2024-02-12T15:17:35.623925039-03:00"
