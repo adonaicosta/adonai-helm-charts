@@ -1,0 +1,80 @@
+# Default values for kube-opex-analytics.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+envs:
+  KOA_DB_LOCATION: /data/db
+  KOA_K8S_API_ENDPOINT: https://kubernetes.default
+  KOA_COST_MODEL: CUMULATIVE_RATIO
+  KOA_BILLING_HOURLY_RATE: 0.0
+  KOA_BILLING_CURRENCY_SYMBOL: $
+  KOA_K8S_API_VERIFY_SSL: true
+  KOA_K8S_CACERT: /run/secrets/kubernetes.io/serviceaccount/ca.crt
+
+dataVolume:
+  persist: true
+  capacity: 4Gi
+  # Inform your storageClass to retain data
+  storageClass: standard
+
+prometheusOperator:
+  enabled: false
+  labels:
+
+securityContext:
+  enabled: true
+  uid: 4583
+  gid: 4583
+
+replicaCount: 1
+
+image:
+  repository: rchakode/kube-opex-analytics
+  pullPolicy: Always
+
+nameOverride: ""
+fullnameOverride: ""
+
+metadata:
+  labels:
+    app: kube-opex-analytics
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 5483
+
+ingress:
+  enabled: false
+  annotations: {}
+  ingressClassName: ""
+  labels: {}
+  hosts:
+    - host: kube-opex-analytics.local
+      paths: []
+# uncomment the following lines and ajust the values to enable TLS
+  # tls:
+  #  - secretName: kube-opex-analytics-tls
+  #    hosts:
+  #      - kube-opex-analytics.local
+
+# priorityClassName: default
+
+resources:
+# No resource requests not limits is specified by default.
+# We leave this as a conscious choice for the user, as this increases chances charts run
+# on environments with little resources, such as Minikube.
+# If you do want to specify resources, uncomment the following lines, adjust them as necessary,
+# and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 256m
+  #   memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

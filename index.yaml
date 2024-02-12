@@ -1,0 +1,78 @@
+apiVersion: v1
+entries:
+  basic-app:
+  - apiVersion: v2
+    appVersion: 0.0.7
+    created: "2024-02-12T15:13:03.728212418-03:00"
+    description: A Helm chart for simple Kubernetes applications
+    digest: 94c3140ec45c0e90c72b1ea9f0e217ce427d86c0784f6bf03ec7a31996be21d4
+    name: basic-app
+    type: application
+    urls:
+    - https://adonaicosta.github.io/adonai-helm-charts/basic-app-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: 0.0.6
+    created: "2024-02-12T15:13:03.727615774-03:00"
+    description: A Helm chart for simple Kubernetes applications
+    digest: 7cd00a1a2ff21794b574708097965ce362b9f159d1eb8ef0eeb941fb927e5706
+    name: basic-app
+    type: application
+    urls:
+    - https://adonaicosta.github.io/adonai-helm-charts/basic-app-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
+    appVersion: 0.0.5
+    created: "2024-02-12T15:13:03.727057268-03:00"
+    description: A Helm chart for simple Kubernetes applications
+    digest: c22111f8156df8887799d56527ec5af7c07071e8e9992e61845e80947731943d
+    name: basic-app
+    type: application
+    urls:
+    - https://adonaicosta.github.io/adonai-helm-charts/basic-app-0.0.5.tgz
+    version: 0.0.5
+  kube-opex-analytics:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2024-02-12T15:13:03.728656002-03:00"
+    description: Helm chart for Kubernetes Opex Analtytics
+    digest: 0693e89234a22427ee9f6186777d715eb9035a1f07c038ab613f2912bb7636b0
+    name: kube-opex-analytics
+    urls:
+    - https://adonaicosta.github.io/adonai-helm-charts/kube-opex-analytics-22.02.3.tgz
+    version: 22.02.3
+  kubed:
+  - apiVersion: v1
+    appVersion: v0.13.2
+    created: "2024-02-12T15:13:03.729237779-03:00"
+    description: Config Syncer by AppsCode - Kubernetes daemon
+    digest: 77f65a6367fad4e775262cdd48abab5b6310c054051146f2cc772776d0fda632
+    home: https://github.com/kubeops/config-syncer
+    icon: https://cdn.appscode.com/images/products/kubed/icons/android-icon-192x192.png
+    maintainers:
+    - email: support@appscode.com
+      name: appscode
+    name: kubed
+    sources:
+    - https://github.com/kubeops/config-syncer
+    urls:
+    - https://adonaicosta.github.io/adonai-helm-charts/kubed-v0.13.2.tgz
+    version: v0.13.2
+  kubesynca:
+  - apiVersion: v1
+    appVersion: v1
+    created: "2024-02-12T15:13:03.730451993-03:00"
+    description: Sincronizador de cm e secs
+    digest: 3e2212efd0f887018fd146452c93762daf20778d892dd089d48e20c8163c69aa
+    home: https://
+    icon: https://
+    maintainers:
+    - email: adonai.costa@gmail.com
+      name: adonai
+    name: kubesynca
+    sources:
+    - https://
+    urls:
+    - https://adonaicosta.github.io/adonai-helm-charts/kubesynca-v1.tgz
+    version: v1
+generated: "2024-02-12T15:13:03.726314638-03:00"

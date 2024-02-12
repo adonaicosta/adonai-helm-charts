@@ -1,0 +1,12 @@
+apiVersion: v1
+appVersion: v1
+description: Sincronizador de cm e secs
+home: https://
+icon: https://
+maintainers:
+- email: adonai.costa@gmail.com
+  name: adonai
+name: kubesynca
+sources:
+- https://
+version: v1
