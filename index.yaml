@@ -3,9 +3,9 @@ entries:
   basic-app:
   - apiVersion: v2
     appVersion: 0.0.7
-    created: "2024-03-21T23:45:56.857233788-03:00"
+    created: "2024-03-28T10:21:47.188363784-03:00"
     description: A Helm chart for simple Kubernetes applications
-    digest: 779606aa61a81734d9e193495537f79e2fc0065f557274f35459a677ab40eb22
+    digest: 028b93aa80e3c0e3c9721734f14ca3c29a6b2197ed9af5fb7556b6c1d291536f
     name: basic-app
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2024-03-21T23:45:56.856373796-03:00"
+    created: "2024-03-28T10:21:47.186693644-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: 7cd00a1a2ff21794b574708097965ce362b9f159d1eb8ef0eeb941fb927e5706
     name: basic-app
@@ -23,7 +23,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2024-03-21T23:45:56.855641637-03:00"
+    created: "2024-03-28T10:21:47.183125218-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: c22111f8156df8887799d56527ec5af7c07071e8e9992e61845e80947731943d
     name: basic-app
@@ -34,9 +34,9 @@ entries:
   kube-opex-analytics:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2024-03-21T23:45:56.857906837-03:00"
+    created: "2024-03-28T10:21:47.18951767-03:00"
     description: Helm chart for Kubernetes Opex Analtytics
-    digest: 5d9e8b338ef1d673384443679a8565cbe7d82425c22f65d43127433cd1a09c99
+    digest: 5ab047160c8b9b259f85da7460dac1cd7ff6f5b93e0814e9097ce6f9e76be211
     name: kube-opex-analytics
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/kube-opex-analytics-22.02.3.tgz
@@ -44,9 +44,9 @@ entries:
   kubed:
   - apiVersion: v1
     appVersion: v0.13.2
-    created: "2024-03-21T23:45:56.858732302-03:00"
+    created: "2024-03-28T10:21:47.191131568-03:00"
     description: Config Syncer by AppsCode - Kubernetes daemon
-    digest: 690b26086ae751d09aefb126193baf9a15f4c587c6be6e1b12a741ea352de23f
+    digest: d8a1af94cbcaec56283799a34552de4a3a25ac5f91771102bfa229c03112eddb
     home: https://github.com/kubeops/config-syncer
     icon: https://cdn.appscode.com/images/products/kubed/icons/android-icon-192x192.png
     maintainers:
@@ -61,9 +61,9 @@ entries:
   kubesynca:
   - apiVersion: v1
     appVersion: v1
-    created: "2024-03-21T23:45:56.859402483-03:00"
+    created: "2024-03-28T10:21:47.19231562-03:00"
     description: Sincronizador de cm e secs
-    digest: 573713f045bd87c3bb2ca3b3f8bcfcf62a8bb91be2ea44b4990f16ceda2c656e
+    digest: 9a1839623a5ac23a79ed0bfd462d015636fb39780dca399d92cf11c0a49c31f5
     home: https://
     icon: https://
     maintainers:
@@ -78,9 +78,9 @@ entries:
   prometheus-msteams:
   - apiVersion: v1
     appVersion: v1.5.2
-    created: "2024-03-21T23:45:56.860172656-03:00"
+    created: "2024-03-28T10:21:47.198533936-03:00"
     description: A Helm chart for Kubernetes
-    digest: ac5ca363a8fb6f56987a49d03bce9560c9a14e293f99b3812e1363c2ec4155a2
+    digest: eaa35b3a4be9c3da2a29576857bb1f234b919197bce0124a838d97b26c07ff63
     home: https://github.com/prometheus-msteams/prometheus-msteams
     maintainers:
     - name: bzon
@@ -99,8 +99,47 @@ entries:
     version: 1.3.4
   temporal:
   - apiVersion: v2
+    appVersion: 1.23.0
+    created: "2024-03-28T10:21:47.361487048-03:00"
+    dependencies:
+    - condition: cassandra.enabled
+      name: cassandra
+      repository: https://charts.helm.sh/incubator
+      version: 0.14.3
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 15.1.3
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.17.3
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 5.0.10
+    description: Temporal is a distributed, scalable, durable, and highly available
+      orchestration engine to execute asynchronous long-running business logic in
+      a scalable and resilient way.
+    digest: 4d8d5f85994d96bafde3fbaf67b78ecd823c0ec1ba7fb95ac36448146cfbf62a
+    home: https://temporal.io/
+    keywords:
+    - temporal
+    - workflow
+    - orchestration
+    maintainers:
+    - name: Temporal Technologies Inc.
+      url: https://temporal.io/
+    name: temporal
+    sources:
+    - https://github.com/temporalio/temporal
+    type: application
+    urls:
+    - https://adonaicosta.github.io/adonai-helm-charts/temporal-0.36.0.tgz
+    version: 0.36.0
+  - apiVersion: v2
     appVersion: 1.22.6
-    created: "2024-03-21T23:45:56.875831296-03:00"
+    created: "2024-03-28T10:21:47.251932914-03:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -137,4 +176,4 @@ entries:
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/temporal-0.35.0.tgz
     version: 0.35.0
-generated: "2024-03-21T23:45:56.854663296-03:00"
+generated: "2024-03-28T10:21:47.177159553-03:00"
