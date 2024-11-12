@@ -14,11 +14,12 @@ image:
   tag: ""
   pullPolicy: IfNotPresent
 
-strategy:
-  rollingUpdate:
-    maxSurge: 25%
-    maxUnavailable: 25%
-  type: RollingUpdate
+#strategy:
+# this is Default
+#  rollingUpdate:
+#    maxSurge: 25%
+#    maxUnavailable: 25%
+#  type: RollingUpdate
 # or
 # type: Recreate
 
