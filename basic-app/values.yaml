@@ -10,8 +10,8 @@ fullnameOverride: ""
 replicaCount: 1
 
 image:
-  repository: ""
-  tag: ""
+  repository: "nginx"
+  tag: "latest"
   pullPolicy: IfNotPresent
 
 # priorityClassName: 
