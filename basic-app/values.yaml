@@ -14,6 +14,8 @@ image:
   tag: ""
   pullPolicy: IfNotPresent
 
+# priorityClassName: 
+
 #strategy:
 # this is Default
 #  rollingUpdate:
