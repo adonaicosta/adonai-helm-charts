@@ -3,9 +3,9 @@ entries:
   basic-app:
   - apiVersion: v2
     appVersion: 0.0.10
-    created: "2025-03-19T12:30:43.068020853-03:00"
+    created: "2025-07-23T17:58:37.77617028-03:00"
     description: A Helm chart for simple Kubernetes applications
-    digest: 234e4d9177d8aec16fd67424dfcaec5111ad52a239057ec79222278f25608197
+    digest: e8f8f7a66698e6b9d2419216ebc7ec24442c3696e126f6facc4fcbb243dcf2eb
     name: basic-app
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.0.10
   - apiVersion: v2
     appVersion: 0.0.9
-    created: "2025-03-19T12:30:43.070732909-03:00"
+    created: "2025-07-23T17:58:37.77846948-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: e0ed0deb054b11c8eed34489b3a1cffca733e0cb0c430ddab66c69183967fcb3
     name: basic-app
@@ -23,7 +23,7 @@ entries:
     version: 0.0.9
   - apiVersion: v2
     appVersion: 0.0.8
-    created: "2025-03-19T12:30:43.070169726-03:00"
+    created: "2025-07-23T17:58:37.778077591-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: fd828c0a1f3eade25bc59a96906359b6529918fc58b48a7bee3ff48f81582bd5
     name: basic-app
@@ -33,7 +33,7 @@ entries:
     version: 0.0.8
   - apiVersion: v2
     appVersion: 0.0.7
-    created: "2025-03-19T12:30:43.069601189-03:00"
+    created: "2025-07-23T17:58:37.777714898-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: 028b93aa80e3c0e3c9721734f14ca3c29a6b2197ed9af5fb7556b6c1d291536f
     name: basic-app
@@ -43,7 +43,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2025-03-19T12:30:43.069049597-03:00"
+    created: "2025-07-23T17:58:37.777359843-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: 7cd00a1a2ff21794b574708097965ce362b9f159d1eb8ef0eeb941fb927e5706
     name: basic-app
@@ -53,7 +53,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2025-03-19T12:30:43.068543283-03:00"
+    created: "2025-07-23T17:58:37.777019435-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: c22111f8156df8887799d56527ec5af7c07071e8e9992e61845e80947731943d
     name: basic-app
@@ -61,12 +61,24 @@ entries:
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/basic-app-0.0.5.tgz
     version: 0.0.5
+  kafka-ui:
+  - apiVersion: v2
+    appVersion: v0.7.2
+    created: "2025-07-23T17:58:37.778787907-03:00"
+    description: A Helm chart for kafka-UI
+    digest: ab21b24d85400a0eeda7b7243c86bd154091ce34e2707914e14ddcfaa55c4317
+    icon: https://github.com/provectus/kafka-ui/raw/master/documentation/images/kafka-ui-logo.png
+    name: kafka-ui
+    type: application
+    urls:
+    - https://adonaicosta.github.io/adonai-helm-charts/kafka-ui-0.7.6.tgz
+    version: 0.7.6
   kube-green:
   - apiVersion: v2
     appVersion: 0.5.2
-    created: "2025-03-19T12:30:43.071348697-03:00"
+    created: "2025-07-23T17:58:37.779115462-03:00"
     description: kube-green helm chart
-    digest: 0cea34717b7943487466074b32b8e5504ea92a0026653d223b05842d4f04510d
+    digest: dceab24b74e59db705125281b31b537c242d2fcf504f638821b8a9512b602c8d
     name: kube-green
     type: application
     urls:
@@ -75,9 +87,9 @@ entries:
   kube-opex-analytics:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2025-03-19T12:30:43.072456917-03:00"
+    created: "2025-07-23T17:58:37.779334506-03:00"
     description: Helm chart for Kubernetes Opex Analtytics
-    digest: 395a6127296fae165909029efefee170d5cae06982b19692033fb2f0ff79a272
+    digest: ed802bfe6cd55bc2b5e5eeddac380a5177b2e877f4dfbd7894d8565ad43d0785
     name: kube-opex-analytics
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/kube-opex-analytics-22.02.3.tgz
@@ -85,9 +97,9 @@ entries:
   kubed:
   - apiVersion: v1
     appVersion: v0.13.2
-    created: "2025-03-19T12:30:43.072989032-03:00"
+    created: "2025-07-23T17:58:37.779630066-03:00"
     description: Config Syncer by AppsCode - Kubernetes daemon
-    digest: 68d4bba699a1a171500b089c7238ff014e6eb50f3df4cdaeecf6d89d01359ef6
+    digest: 66fbc3658d8fde457ee1bff63e4e8e05bc6caa0285969270920453777482b053
     home: https://github.com/kubeops/config-syncer
     icon: https://cdn.appscode.com/images/products/kubed/icons/android-icon-192x192.png
     maintainers:
@@ -102,9 +114,9 @@ entries:
   kubesynca:
   - apiVersion: v1
     appVersion: v1
-    created: "2025-03-19T12:30:43.073465793-03:00"
+    created: "2025-07-23T17:58:37.779874049-03:00"
     description: Sincronizador de cm e secs
-    digest: 873189220fb8a7de2b87eebadfc7cc22282024f6fe976890b8c84d38d075de57
+    digest: 97fb4da7c9cb6da5cbb9bc19e99f4ec19e5eb98baa35f0ef449c7843ab574197
     home: https://
     icon: https://
     maintainers:
@@ -119,9 +131,9 @@ entries:
   prometheus-msteams:
   - apiVersion: v1
     appVersion: v1.5.2
-    created: "2025-03-19T12:30:43.073975446-03:00"
+    created: "2025-07-23T17:58:37.780266597-03:00"
     description: A Helm chart for Kubernetes
-    digest: 4479ea23c7e6d66148e15e052891a6b87000baa720284e1896ad4d43eedfa3a1
+    digest: a56f09b454591c9d35a62dcdfe83c99f41c256706e15039f2f0f78f26179b6b0
     home: https://github.com/prometheus-msteams/prometheus-msteams
     maintainers:
     - name: bzon
@@ -141,7 +153,7 @@ entries:
   temporal:
   - apiVersion: v2
     appVersion: 1.23.0
-    created: "2025-03-19T12:30:43.095117516-03:00"
+    created: "2025-07-23T17:58:37.793325194-03:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -162,7 +174,7 @@ entries:
     description: Temporal is a distributed, scalable, durable, and highly available
       orchestration engine to execute asynchronous long-running business logic in
       a scalable and resilient way.
-    digest: ebf2a9adb3dc7c74c8fe41df2aa4c9eea0de1bfd2c3fcfdc770c02737de45c71
+    digest: aabab842e3bc8fcdf6b091942498cc3ffd1bde0d99b8856a895fbb425e3e8ebe
     home: https://temporal.io/
     keywords:
     - temporal
@@ -180,7 +192,7 @@ entries:
     version: 0.36.0
   - apiVersion: v2
     appVersion: 1.22.6
-    created: "2025-03-19T12:30:43.084825583-03:00"
+    created: "2025-07-23T17:58:37.786013422-03:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -217,4 +229,4 @@ entries:
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/temporal-0.35.0.tgz
     version: 0.35.0
-generated: "2025-03-19T12:30:43.067280624-03:00"
+generated: "2025-07-23T17:58:37.775552319-03:00"

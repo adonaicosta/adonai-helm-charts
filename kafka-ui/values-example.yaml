@@ -1,0 +1,16 @@
+# configmap example:
+#
+# apiVersion: v1
+# data:
+#   AUTH_TYPE: LOGIN_FORM
+#   KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka-cluster-kafka-bootstrap.kafka-namespace.svc.cluster.local:9092
+#   KAFKA_CLUSTERS_0_NAME: kafka-cluster
+#   MANAGEMENT_HEALTH_LDAP_ENABLED: "FALSE"
+#   SPRING_SECURITY_USER_NAME: admin
+#   SPRING_SECURITY_USER_PASSWORD: admin
+# kind: ConfigMap
+# metadata:
+#   name: kafka-ui-configmap
+#   namespace: kafka-namespace
+#
+#existingConfigMap: kafka-ui-confimap
