@@ -2,8 +2,8 @@ annotations:
   category: Infrastructure
   licenses: Apache-2.0
 apiVersion: v2
-appVersion: 2.20.5
-description: A Library Helm Chart for grouping common logic between charts.
+appVersion: 2.21.0
+description: A Library Helm Chart for grouping common logic between  charts.
   This chart is not deployable by itself.
 home: https://.com
 icon: https://.com/downloads/logos/-mark.png
@@ -12,11 +12,12 @@ keywords:
 - helper
 - template
 - function
+- bitnami
 maintainers:
-- name: Adonai
-  url: https://github.com/adonaicosta
+- name: ADonai
+  url: https://adonaicosta.github.io/adonai-helm-charts
 name: common
 sources:
-- https://github.com/adonaicosta
+- https://adonaicosta.github.io/
 type: library
-version: 2.20.5
+version: 2.21.0
