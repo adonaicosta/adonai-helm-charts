@@ -2,7 +2,7 @@ annotations:
   category: Infrastructure
   licenses: Apache-2.0
 apiVersion: v2
-appVersion: 2.20.1
+appVersion: 2.26.0
 description: A Library Helm Chart for grouping common logic between charts.
   This chart is not deployable by itself.
 home: https://.com
@@ -12,6 +12,7 @@ keywords:
 - helper
 - template
 - function
+- bitnami
 maintainers:
 - name: ADonai
   url: https://adonaicosta.github.io/adonai-helm-charts
@@ -19,4 +20,4 @@ name: common
 sources:
 - https://adonaicosta.github.io/
 type: library
-version: 2.20.2
+version: 2.26.0
