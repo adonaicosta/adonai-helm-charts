@@ -1,0 +1,36 @@
+annotations:
+  category: Infrastructure
+  images: |
+    - name: minio
+      image: quay.io/minio/minio:RELEASE.2024-12-18T13-15-44Z
+    - name: minio-client
+      image: quay.io/minio/minio:RELEASE.2024-12-18T13-15-44Z
+    - name: os-shell
+      image: ghcr.io/adonaicosta/os-shell:12-debian-12-r26
+  licenses: Apache-2.0
+apiVersion: v2
+appVersion: 2024.3.15
+dependencies:
+- name: common
+  repository: https://adonaicosta.github.io/adonai-helm-charts
+  tags:
+  - common
+  version: 2.x.x
+description: MinIO(R) is an object storage server, compatible with Amazon S3 cloud
+  storage service, mainly used for storing unstructured data (such as photos, videos,
+  log files, etc.).
+home: https://min.io
+icon: https://min.io
+keywords:
+- minio
+- storage
+- object-storage
+- s3
+- cluster
+maintainers:
+- name: Adonai
+  url: https://adonaicosta.github.io/adonai-helm-charts
+name: minio
+sources:
+- https://adonaicosta.github.io/adonai-helm-charts
+version: 13.8.4

@@ -1,0 +1,37 @@
+annotations:
+  category: Analytics
+  images: |
+    - name: os-shell
+      image: ghcr.io/adonaicosta/os-shell:12-debian-12-r26
+    - name: thanos
+      image: quay.io/thanos/thanos:v0.34.1
+  licenses: Apache-2.0
+apiVersion: v2
+appVersion: 0.34.1
+dependencies:
+- condition: minio.enabled
+  name: minio
+  repository: oci://registry-1.docker.io/
+  version: 13.x.x
+- name: common
+  repository: https://adonaicosta.github.io/adonai-helm-charts
+  tags:
+  - common
+  version: 2.x.x
+description: Thanos is a highly available metrics system that can be added on top
+  of existing Prometheus deployments, providing a global query view across all Prometheus
+  installations.
+home: https://thanos.io
+icon: https://thanos.io/img/thanos-stack-220x234.png
+keywords:
+- analytics
+- monitoring
+- prometheus
+- thanos
+maintainers:
+- name: bozo
+  url: https://github.com/thanos.io
+name: thanos
+sources:
+- https://github.com/thanos.io
+version: 14.0.2

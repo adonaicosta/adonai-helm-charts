@@ -3,9 +3,9 @@ entries:
   basic-app:
   - apiVersion: v2
     appVersion: 0.0.10
-    created: "2025-08-08T10:51:31.439094353-03:00"
+    created: "2025-08-28T12:08:01.511980968-03:00"
     description: A Helm chart for simple Kubernetes applications
-    digest: 3af01bf0af5b6d2fcbe4293f5a233198fd7b7329be8598cc6b644fb27232fa49
+    digest: 7b0f3e24994941c5c6e02de3c1b0d94cd0e1e96ca31572e16ab2b70fe960a62e
     name: basic-app
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.0.10
   - apiVersion: v2
     appVersion: 0.0.9
-    created: "2025-08-08T10:51:31.441438847-03:00"
+    created: "2025-08-28T12:08:01.514316549-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: e0ed0deb054b11c8eed34489b3a1cffca733e0cb0c430ddab66c69183967fcb3
     name: basic-app
@@ -23,7 +23,7 @@ entries:
     version: 0.0.9
   - apiVersion: v2
     appVersion: 0.0.8
-    created: "2025-08-08T10:51:31.441062905-03:00"
+    created: "2025-08-28T12:08:01.513938346-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: fd828c0a1f3eade25bc59a96906359b6529918fc58b48a7bee3ff48f81582bd5
     name: basic-app
@@ -33,7 +33,7 @@ entries:
     version: 0.0.8
   - apiVersion: v2
     appVersion: 0.0.7
-    created: "2025-08-08T10:51:31.440697112-03:00"
+    created: "2025-08-28T12:08:01.513576302-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: 028b93aa80e3c0e3c9721734f14ca3c29a6b2197ed9af5fb7556b6c1d291536f
     name: basic-app
@@ -43,7 +43,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2025-08-08T10:51:31.440293145-03:00"
+    created: "2025-08-28T12:08:01.513171373-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: 7cd00a1a2ff21794b574708097965ce362b9f159d1eb8ef0eeb941fb927e5706
     name: basic-app
@@ -53,7 +53,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2025-08-08T10:51:31.439942034-03:00"
+    created: "2025-08-28T12:08:01.512826402-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: c22111f8156df8887799d56527ec5af7c07071e8e9992e61845e80947731943d
     name: basic-app
@@ -67,7 +67,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.31.3
-    created: "2025-08-08T10:51:31.446301676-03:00"
+    created: "2025-08-28T12:08:01.519763037-03:00"
     description: A Library Helm Chart for grouping common logic between charts. This
       chart is not deployable by itself.
     digest: 4b60c54330334cd5843522cafe7ff65ccb074dff4ea0cf58c4574264df94e3b1
@@ -94,7 +94,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.26.0
-    created: "2025-08-08T10:51:31.445601523-03:00"
+    created: "2025-08-28T12:08:01.518971889-03:00"
     description: A Library Helm Chart for grouping common logic between charts. This
       chart is not deployable by itself.
     digest: b6e83e7360f65d5601f1ee50d34755e179681965d090ebb3d5cf5dbbceb8d313
@@ -121,7 +121,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.21.0
-    created: "2025-08-08T10:51:31.444867118-03:00"
+    created: "2025-08-28T12:08:01.518232605-03:00"
     description: A Library Helm Chart for grouping common logic between  charts. This
       chart is not deployable by itself.
     digest: 9a82829685607fe45701eab7cffe58fa30be0154632fe41e438ef1f2226a6dba
@@ -148,7 +148,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.20.5
-    created: "2025-08-08T10:51:31.444074272-03:00"
+    created: "2025-08-28T12:08:01.517379608-03:00"
     description: A Library Helm Chart for grouping common logic between charts. This
       chart is not deployable by itself.
     digest: ae065660d68063133b816c5f3968f54d43eb024c970d45e407a9e55c96a8517d
@@ -174,7 +174,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.20.1
-    created: "2025-08-08T10:51:31.443284523-03:00"
+    created: "2025-08-28T12:08:01.516437372-03:00"
     description: A Library Helm Chart for grouping common logic between charts. This
       chart is not deployable by itself.
     digest: 8a73726e8e91420952d543c9b59ec88a7d3cfb93aff397107a7d5a9a54605fc3
@@ -200,7 +200,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.20.0
-    created: "2025-08-08T10:51:31.442301421-03:00"
+    created: "2025-08-28T12:08:01.515205361-03:00"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
     digest: b2c8dd20340e30b9a1b74a5e84cf7a46afbcdc4788cb1de75e687ed1dc6c1087
@@ -222,6 +222,32 @@ entries:
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/common-2.20.0.tgz
     version: 2.20.0
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.19.0
+    created: "2025-08-28T12:08:01.514701581-03:00"
+    description: A Library Helm Chart for grouping common logic between charts. This
+      chart is not deployable by itself.
+    digest: 483ac26cd2cf20bf0e67b1374b707753da6660398354added99a4910e5591da0
+    home: https://.com
+    icon: https://.com/downloads/logos/-mark.png
+    keywords:
+    - common
+    - helper
+    - template
+    - function
+    maintainers:
+    - name: ADonai
+      url: https://adonaicosta.github.io/adonai-helm-charts
+    name: common
+    sources:
+    - https://adonaicosta.github.io/
+    type: library
+    urls:
+    - https://adonaicosta.github.io/adonai-helm-charts/common-2.19.0.tgz
+    version: 2.19.0
   external-dns:
   - annotations:
       category: DeveloperTools
@@ -231,7 +257,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.15.0
-    created: "2025-08-08T10:51:31.449435184-03:00"
+    created: "2025-08-28T12:08:01.521906047-03:00"
     dependencies:
     - name: common
       repository: https://adonaicosta.github.io/adonai-helm-charts
@@ -240,7 +266,7 @@ entries:
       version: 2.x.x
     description: ExternalDNS is a Kubernetes addon that configures public DNS servers
       with information about exposed Kubernetes services to make them discoverable.
-    digest: 9d8bc9eb1f59d2aace5467fe330267380be2aa87adda3fc66fd38d3cc2755991
+    digest: 1bac33087a0fa57c8065774b7f6232c9deca456ee8ea0f565d57405d0f63ecfa
     home: https://.com
     icon: https://.com/assets/stacks/external-dns/img/external-dns-stack-220x234.png
     keywords:
@@ -259,9 +285,9 @@ entries:
   kafka-ui:
   - apiVersion: v2
     appVersion: v0.7.2
-    created: "2025-08-08T10:51:31.449835667-03:00"
+    created: "2025-08-28T12:08:01.522210739-03:00"
     description: A Helm chart for kafka-UI
-    digest: 92a1e7ac5aa4fec3b3ec3eb8eaca7ad680080a79b3e573c3d233ad7de9c088dc
+    digest: 39795486ffef4099fc628af1d6be47225377cbbbcad4def94696a565609b96c0
     icon: https://github.com/provectus/kafka-ui/raw/master/documentation/images/kafka-ui-logo.png
     name: kafka-ui
     type: application
@@ -279,7 +305,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 25.0.2
-    created: "2025-08-08T10:51:31.455420316-03:00"
+    created: "2025-08-28T12:08:01.528352124-03:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -293,7 +319,7 @@ entries:
     description: Keycloak is a high performance Java-based identity and access management
       solution. It lets developers add an authentication layer to their applications
       with minimum effort.
-    digest: 1f60cb47e97a62d9675215eb01c1eff31d1d0c3c13f91f047d42c108481559be
+    digest: 430d466c1cd7820943b237881487a38eb758bf4408cecc8e92985ed1b9747215
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
     keywords:
@@ -312,7 +338,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 18.0.2
-    created: "2025-08-08T10:51:31.459883699-03:00"
+    created: "2025-08-28T12:08:01.532442983-03:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -326,7 +352,7 @@ entries:
     description: Keycloak is a high performance Java-based identity and access management
       solution. It lets developers add an authentication layer to their applications
       with minimum effort.
-    digest: afc6fb8406d5e7b7d431044548d0daf2c3a0e47708e876eec004e4bee526fc2e
+    digest: 13dcbb7203947f335b458a69e2c10b5ea6bfcf60f4311350c1f9b2ec8ce62b88
     home: https://www.keycloak.org
     icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
     keywords:
@@ -345,9 +371,9 @@ entries:
   kube-green:
   - apiVersion: v2
     appVersion: 0.5.2
-    created: "2025-08-08T10:51:31.460192127-03:00"
+    created: "2025-08-28T12:08:01.532749121-03:00"
     description: kube-green helm chart
-    digest: d9038fa01bd66a8945a05421690e71049e104548940506a6c6905205353f1a64
+    digest: 544693b30c1f54199fe5ec80b3f4891f05209bf3e978226b815016a19a14d692
     name: kube-green
     type: application
     urls:
@@ -356,9 +382,9 @@ entries:
   kube-opex-analytics:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2025-08-08T10:51:31.460403107-03:00"
+    created: "2025-08-28T12:08:01.532962522-03:00"
     description: Helm chart for Kubernetes Opex Analtytics
-    digest: 140346eb342e1e587ad959a495fb2129f00e2f12ee551c4002f74a9685c2f2b0
+    digest: 547b8487da64131a4f977a37dc1e73daef60b64d607296d3e1a65882117f07df
     name: kube-opex-analytics
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/kube-opex-analytics-22.02.3.tgz
@@ -366,9 +392,9 @@ entries:
   kubed:
   - apiVersion: v1
     appVersion: v0.13.2
-    created: "2025-08-08T10:51:31.46066344-03:00"
+    created: "2025-08-28T12:08:01.53321248-03:00"
     description: Config Syncer by AppsCode - Kubernetes daemon
-    digest: 96b75ad54ac31025e46e7b9c717088f857ff63ca9245dabcf231405f90dc8b96
+    digest: 0d1e381c0da11e17887b5745525b8a2c8fe6f61f63916e657a60ec4eebce0eec
     home: https://github.com/kubeops/config-syncer
     icon: https://cdn.appscode.com/images/products/kubed/icons/android-icon-192x192.png
     maintainers:
@@ -389,7 +415,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 1.7.0
-    created: "2025-08-08T10:51:31.461866814-03:00"
+    created: "2025-08-28T12:08:01.535098125-03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -399,7 +425,7 @@ entries:
     description: Kubernetes Event Exporter makes it easy to export Kubernetes events
       to other tools, thereby enabling better event observability, custom alerts and
       aggregation.
-    digest: 1d856bd570c1f50e4bb72a11fc1983f5feb91d156493d60fc4878bf341146f78
+    digest: dbe11d00615165e5b46c30f01ac45420e6f8cd63865833c8d5db779741416fa8
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/kubernetes-event-exporter/img/kubernetes-event-exporter-stack-220x234.png
     keywords:
@@ -421,9 +447,9 @@ entries:
   kubesynca:
   - apiVersion: v1
     appVersion: v1
-    created: "2025-08-08T10:51:31.462094765-03:00"
+    created: "2025-08-28T12:08:01.535537291-03:00"
     description: Sincronizador de cm e secs
-    digest: ff34ea20f013db229049b37ff8a7fea1ef6a8d22dded14c02736d11142ae2491
+    digest: 7ecf63bd29f7faa22eacf5edb4cde40f0519157168a1b2860af8f824ca5d6942
     home: https://
     icon: https://
     maintainers:
@@ -448,7 +474,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 11.3.2
-    created: "2025-08-08T10:51:31.464042808-03:00"
+    created: "2025-08-28T12:08:01.538951354-03:00"
     dependencies:
     - name: common
       repository: https://adonaicosta.github.io/adonai-helm-charts
@@ -458,7 +484,7 @@ entries:
     description: MariaDB is an open source, community-developed SQL database server
       that is widely in use around the world due to its enterprise features, flexibility,
       and collaboration with leading tech firms.
-    digest: b69ab1c33b7bf4b2c7d83e278a4d8f75c5208c4df353265e4d935993f09d0976
+    digest: 809f9bd9a6919e59a634423410bc5afa913db87818decb6174845a5e0b12eadb
     home: https://.com
     icon: https://.com/assets/stacks/mariadb/img/mariadb-stack-220x234.png
     keywords:
@@ -489,7 +515,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 1.6.28
-    created: "2025-08-08T10:51:31.465505308-03:00"
+    created: "2025-08-28T12:08:01.540669446-03:00"
     dependencies:
     - name: common
       repository: https://adonaicosta.github.io/adonai-helm-charts
@@ -499,7 +525,7 @@ entries:
     description: Memcached is an high-performance, distributed memory object caching
       system, generic in nature, but intended for use in speeding up dynamic web applications
       by alleviating database load.
-    digest: e60d2fe5917cd78df1bbaf912fcb926d73126eeac0763d510ee167c81c49ef70
+    digest: 6d38c53916885b9fbf267913a2e5de1426935cd6ccfb59d985daa02c595eff60
     home: https://.com
     icon: https://.com/assets/stacks/memcached/img/memcached-stack-220x234.png
     keywords:
@@ -527,7 +553,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.0.9
-    created: "2025-08-08T10:51:31.467849986-03:00"
+    created: "2025-08-28T12:08:01.543207333-03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -537,7 +563,7 @@ entries:
     description: MongoDB(R) is an open source NoSQL database that uses JSON for data
       storage. MongoDB(TM) Sharded improves scalability and reliability for large
       datasets by distributing data across multiple machines.
-    digest: 16ae1444d0ef2c4d2fa6f82e8875f6f9e03cac70bd8994dacd88a7f7bdcfcb5e
+    digest: 3264912affb3230d87bed5936fcfba387d4a5ce3915c4fefa7b8cbe5d3468256
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
     keywords:
@@ -569,7 +595,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.3.0
-    created: "2025-08-08T10:51:31.470544379-03:00"
+    created: "2025-08-28T12:08:01.546024469-03:00"
     dependencies:
     - name: common
       repository: https://adonaicosta.github.io/adonai-helm-charts
@@ -579,7 +605,7 @@ entries:
     description: PostgreSQL (Postgres) is an open source object-relational database
       known for reliability and data integrity. ACID-compliant, it supports foreign
       keys, joins, views, triggers and stored procedures.
-    digest: 9da9bda3aed9464110f41507026e403bb42fc6ff1c7aac38b2fa8508114dde7f
+    digest: 02e82074848edcc1e5716cd8606145e54a62d234bf4c9593249b203d40bc3a93
     home: https://postgresql.org
     icon: https://portgresql.org
     keywords:
@@ -601,9 +627,9 @@ entries:
   prometheus-msteams:
   - apiVersion: v1
     appVersion: v1.5.2
-    created: "2025-08-08T10:51:31.470814713-03:00"
+    created: "2025-08-28T12:08:01.54627664-03:00"
     description: A Helm chart for Kubernetes
-    digest: 59b528c06991cc6b1f266b5a4510562fb60e8c89cc126c78b23ca9ab75cd4a84
+    digest: 941e439763a69f4187e414abe6c54d34997affc393e24e67747d3322efa10543
     home: https://github.com/prometheus-msteams/prometheus-msteams
     maintainers:
     - name: bzon
@@ -638,7 +664,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 8.2.0
-    created: "2025-08-08T10:51:31.478653763-03:00"
+    created: "2025-08-28T12:08:01.553345297-03:00"
     dependencies:
     - name: common
       repository: https://adonaicosta.github.io/adonai-helm-charts
@@ -648,7 +674,7 @@ entries:
     description: Redis(R) is an open source, advanced key-value store. It is often
       referred to as a data structure server since keys can contain strings, hashes,
       lists, sets and sorted sets.
-    digest: c0d901340068d15a0496ac9dc8434f48b7918a6c00064a5d514faef2c3660c04
+    digest: 9c70e45698d11b08249bdda7a9e103ec7dd9dd75c34e930b428b1865afd885a1
     home: https://.com
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -668,7 +694,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.2.7
-    created: "2025-08-08T10:51:31.473834919-03:00"
+    created: "2025-08-28T12:08:01.54910541-03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -678,7 +704,7 @@ entries:
     description: Redis(R) is an open source, advanced key-value store. It is often
       referred to as a data structure server since keys can contain strings, hashes,
       lists, sets and sorted sets.
-    digest: 671ff651f0ec8522ad78c89365996bec2ccf49c58f14f4ed3994f62ba9936901
+    digest: 0a8a58e6de5d54760f453becced5d36a18bf18f28ca1c705f4c9480d26366109
     home: https://github.com/bitnami/charts/tree/master/bitnami/redis
     icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -709,7 +735,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.4.2
-    created: "2025-08-08T10:51:31.48115-03:00"
+    created: "2025-08-28T12:08:01.556214308-03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -719,7 +745,7 @@ entries:
     description: Redis(R) is an open source, scalable, distributed in-memory cache
       for applications. It can be used to store and serve data in the form of strings,
       hashes, lists, sets and sorted sets.
-    digest: 981ec52f8636ae98fa85e0c9ed994578e49c25e9f88c2fcf0536ffe488b7e9e0
+    digest: 2f24b5b87bf5208956d04ef12edd5f2a79d1a99e883e9a248ccc172e933d8c4a
     home: https://bitnami.com
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -738,7 +764,7 @@ entries:
   temporal:
   - apiVersion: v2
     appVersion: 1.23.0
-    created: "2025-08-08T10:51:31.493388918-03:00"
+    created: "2025-08-28T12:08:01.567723078-03:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -759,7 +785,7 @@ entries:
     description: Temporal is a distributed, scalable, durable, and highly available
       orchestration engine to execute asynchronous long-running business logic in
       a scalable and resilient way.
-    digest: b66994f7b5e287a9fe209c637c8b67cf529cae9a0d45990e55cdd6d9cce97991
+    digest: 1faab970afae61a63230172750d55cca705556e12625cb54fce8f0cc60fb3cc1
     home: https://temporal.io/
     keywords:
     - temporal
@@ -777,7 +803,7 @@ entries:
     version: 0.36.0
   - apiVersion: v2
     appVersion: 1.22.6
-    created: "2025-08-08T10:51:31.487511949-03:00"
+    created: "2025-08-28T12:08:01.562547148-03:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -814,6 +840,48 @@ entries:
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/temporal-0.35.0.tgz
     version: 0.35.0
+  thanos:
+  - annotations:
+      category: Analytics
+      images: |
+        - name: os-shell
+          image: ghcr.io/adonaicosta/os-shell:12-debian-12-r26
+        - name: thanos
+          image: quay.io/thanos/thanos:v0.34.1
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.34.1
+    created: "2025-08-28T12:08:01.579307491-03:00"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/
+      version: 13.x.x
+    - name: common
+      repository: https://adonaicosta.github.io/adonai-helm-charts
+      tags:
+      - common
+      version: 2.x.x
+    description: Thanos is a highly available metrics system that can be added on
+      top of existing Prometheus deployments, providing a global query view across
+      all Prometheus installations.
+    digest: c64fe5cddf7a5905d2c728f29377be140e90259f77f9dc6ed2e18ebe6faa84f1
+    home: https://thanos.io
+    icon: https://thanos.io/img/thanos-stack-220x234.png
+    keywords:
+    - analytics
+    - monitoring
+    - prometheus
+    - thanos
+    maintainers:
+    - name: bozo
+      url: https://github.com/thanos.io
+    name: thanos
+    sources:
+    - https://github.com/thanos.io
+    urls:
+    - https://adonaicosta.github.io/adonai-helm-charts/thanos-14.0.2.tgz
+    version: 14.0.2
   wordpress:
   - annotations:
       category: CMS
@@ -827,7 +895,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.5.4
-    created: "2025-08-08T10:51:31.49926666-03:00"
+    created: "2025-08-28T12:08:01.584997931-03:00"
     dependencies:
     - condition: memcached.enabled
       name: memcached
@@ -845,7 +913,7 @@ entries:
     description: WordPress is the world's most popular blogging and content management
       platform. Powerful yet simple, everyone from students to global corporations
       use it to build beautiful, functional websites.
-    digest: 9ac07d98874dc63fdc863d5c28a1ef45c611b8fa2be6a8cc658945de1bdc6774
+    digest: 2ff524dfcdd9365eefd92c943f42d072471e284707cf8d5226cbcb3ccb7cae48
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
     keywords:
@@ -865,4 +933,4 @@ entries:
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/wordpress-22.4.11.tgz
     version: 22.4.11
-generated: "2025-08-08T10:51:31.438679714-03:00"
+generated: "2025-08-28T12:08:01.511580624-03:00"
