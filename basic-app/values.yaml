@@ -272,6 +272,24 @@ ingress:
 # post-rollback	Executes on a rollback request after all resources have been modified
 # test	Executes when the Helm test subcommand is invoked ( view test docs)
 
+####################
+## ServiceMonitor ##
+####################
+
+serviceMonitor:
+  enabled: false
+  # namespace: monitoring
+  # additionalLabels: {}
+  # namespaceSelector: {}
+  # port: http        # defaults to service.port if not set
+  path: /metrics
+  # interval: 30s
+  # scrapeTimeout: 10s
+  # scheme: http
+  # tlsConfig: {}
+  # relabelings: []
+  # metricRelabelings: []
+
 hooks: []
 #- name: migrate-db
 #  hooks:
