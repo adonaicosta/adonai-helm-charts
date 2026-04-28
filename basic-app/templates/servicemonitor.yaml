@@ -20,7 +20,7 @@ spec:
     {{- toYaml . | nindent 4 }}
   {{- end }}
   endpoints:
-  - port: {{ .Values.serviceMonitor.port | default .Values.service.port }}
+  - port: {{ .Values.serviceMonitor.port | default .Values.service.name }}
     path: {{ .Values.serviceMonitor.path | default "/metrics" }}
     {{- with .Values.serviceMonitor.interval }}
     interval: {{ . }}

@@ -183,6 +183,7 @@ service:
   enabled: true
   type: ClusterIP
   port: 80
+  name: http
 
 ###################
 ## Configuration ##
