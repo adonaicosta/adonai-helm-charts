@@ -3,7 +3,7 @@ entries:
   basic-app:
   - apiVersion: v2
     appVersion: 0.0.11
-    created: "2026-07-05T00:13:53.304988437-03:00"
+    created: "2026-07-05T00:15:30.276193205-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: 80b13cfcf1a67c8c884f030f98a636a91ed7d03932d63d8630ec1a962d349d38
     name: basic-app
@@ -13,7 +13,7 @@ entries:
     version: 0.0.11
   - apiVersion: v2
     appVersion: 0.0.10
-    created: "2026-07-05T00:13:53.304570004-03:00"
+    created: "2026-07-05T00:15:30.275817784-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: d87ce02f4002139fa005646fa349eccae6698acf47f522eb2802743952b93cf1
     name: basic-app
@@ -23,7 +23,7 @@ entries:
     version: 0.0.10
   - apiVersion: v2
     appVersion: 0.0.9
-    created: "2026-07-05T00:13:53.306649389-03:00"
+    created: "2026-07-05T00:15:30.277712899-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: e0ed0deb054b11c8eed34489b3a1cffca733e0cb0c430ddab66c69183967fcb3
     name: basic-app
@@ -33,7 +33,7 @@ entries:
     version: 0.0.9
   - apiVersion: v2
     appVersion: 0.0.8
-    created: "2026-07-05T00:13:53.306274079-03:00"
+    created: "2026-07-05T00:15:30.277430657-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: fd828c0a1f3eade25bc59a96906359b6529918fc58b48a7bee3ff48f81582bd5
     name: basic-app
@@ -43,7 +43,7 @@ entries:
     version: 0.0.8
   - apiVersion: v2
     appVersion: 0.0.7
-    created: "2026-07-05T00:13:53.305936237-03:00"
+    created: "2026-07-05T00:15:30.277109803-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: 028b93aa80e3c0e3c9721734f14ca3c29a6b2197ed9af5fb7556b6c1d291536f
     name: basic-app
@@ -53,7 +53,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2026-07-05T00:13:53.305613004-03:00"
+    created: "2026-07-05T00:15:30.276785823-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: 7cd00a1a2ff21794b574708097965ce362b9f159d1eb8ef0eeb941fb927e5706
     name: basic-app
@@ -63,7 +63,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2026-07-05T00:13:53.305291979-03:00"
+    created: "2026-07-05T00:15:30.276501717-03:00"
     description: A Helm chart for simple Kubernetes applications
     digest: c22111f8156df8887799d56527ec5af7c07071e8e9992e61845e80947731943d
     name: basic-app
@@ -77,7 +77,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.31.3
-    created: "2026-07-05T00:13:53.312168825-03:00"
+    created: "2026-07-05T00:15:30.281076359-03:00"
     description: A Library Helm Chart for grouping common logic between charts. This
       chart is not deployable by itself.
     digest: 4b60c54330334cd5843522cafe7ff65ccb074dff4ea0cf58c4574264df94e3b1
@@ -104,7 +104,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.26.0
-    created: "2026-07-05T00:13:53.311417222-03:00"
+    created: "2026-07-05T00:15:30.280610054-03:00"
     description: A Library Helm Chart for grouping common logic between charts. This
       chart is not deployable by itself.
     digest: b6e83e7360f65d5601f1ee50d34755e179681965d090ebb3d5cf5dbbceb8d313
@@ -131,7 +131,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.21.0
-    created: "2026-07-05T00:13:53.310729054-03:00"
+    created: "2026-07-05T00:15:30.279621995-03:00"
     description: A Library Helm Chart for grouping common logic between  charts. This
       chart is not deployable by itself.
     digest: 9a82829685607fe45701eab7cffe58fa30be0154632fe41e438ef1f2226a6dba
@@ -158,7 +158,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.20.5
-    created: "2026-07-05T00:13:53.310005955-03:00"
+    created: "2026-07-05T00:15:30.279232902-03:00"
     description: A Library Helm Chart for grouping common logic between charts. This
       chart is not deployable by itself.
     digest: ae065660d68063133b816c5f3968f54d43eb024c970d45e407a9e55c96a8517d
@@ -184,7 +184,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.20.1
-    created: "2026-07-05T00:13:53.309287438-03:00"
+    created: "2026-07-05T00:15:30.278851645-03:00"
     description: A Library Helm Chart for grouping common logic between charts. This
       chart is not deployable by itself.
     digest: 8a73726e8e91420952d543c9b59ec88a7d3cfb93aff397107a7d5a9a54605fc3
@@ -210,7 +210,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.20.0
-    created: "2026-07-05T00:13:53.308531463-03:00"
+    created: "2026-07-05T00:15:30.278472087-03:00"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
     digest: b2c8dd20340e30b9a1b74a5e84cf7a46afbcdc4788cb1de75e687ed1dc6c1087
@@ -237,7 +237,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.19.0
-    created: "2026-07-05T00:13:53.307294589-03:00"
+    created: "2026-07-05T00:15:30.278088449-03:00"
     description: A Library Helm Chart for grouping common logic between charts. This
       chart is not deployable by itself.
     digest: 8e657e7d2c4245a1f52a3898feae682ee570edd9561c80e977d11a6784593c59
@@ -267,7 +267,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.15.0
-    created: "2026-07-05T00:13:53.315899553-03:00"
+    created: "2026-07-05T00:15:30.283370122-03:00"
     dependencies:
     - name: common
       repository: https://adonaicosta.github.io/adonai-helm-charts
@@ -295,7 +295,7 @@ entries:
   kafka-ui:
   - apiVersion: v2
     appVersion: v0.7.2
-    created: "2026-07-05T00:13:53.316448248-03:00"
+    created: "2026-07-05T00:15:30.283698004-03:00"
     description: A Helm chart for kafka-UI
     digest: 31e867619dd03a69641526ff8a9d16e1120a6d923cf768e34f6bcf5b30d58d8f
     icon: https://github.com/provectus/kafka-ui/raw/master/documentation/images/kafka-ui-logo.png
@@ -315,7 +315,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 25.0.2
-    created: "2026-07-05T00:13:53.324471259-03:00"
+    created: "2026-07-05T00:15:30.29047556-03:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -348,7 +348,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 18.0.2
-    created: "2026-07-05T00:13:53.328856238-03:00"
+    created: "2026-07-05T00:15:30.294831774-03:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -381,7 +381,7 @@ entries:
   kube-green:
   - apiVersion: v2
     appVersion: 0.5.2
-    created: "2026-07-05T00:13:53.329213405-03:00"
+    created: "2026-07-05T00:15:30.295164576-03:00"
     description: kube-green helm chart
     digest: 5c45416f9d8fdd1aedbfa89e779be1f2885e72aad703bc3a6b1941b7018676a9
     name: kube-green
@@ -392,7 +392,7 @@ entries:
   kube-opex-analytics:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-07-05T00:13:53.329482887-03:00"
+    created: "2026-07-05T00:15:30.295400365-03:00"
     description: Helm chart for Kubernetes Opex Analtytics
     digest: 7b51a0f6d35fa39564f520f67325cbb3f54fbda3533baceb4f49a3f6a60ba867
     name: kube-opex-analytics
@@ -402,7 +402,7 @@ entries:
   kubed:
   - apiVersion: v1
     appVersion: v0.13.2
-    created: "2026-07-05T00:13:53.329783553-03:00"
+    created: "2026-07-05T00:15:30.295680979-03:00"
     description: Config Syncer by AppsCode - Kubernetes daemon
     digest: a9bf7183c34e6ac26b9a163094cba87564f3026cab13425148f9c5f2a2d65d14
     home: https://github.com/kubeops/config-syncer
@@ -425,7 +425,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 1.7.0
-    created: "2026-07-05T00:13:53.331273861-03:00"
+    created: "2026-07-05T00:15:30.297010375-03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -457,7 +457,7 @@ entries:
   kubesynca:
   - apiVersion: v1
     appVersion: v1
-    created: "2026-07-05T00:13:53.33193685-03:00"
+    created: "2026-07-05T00:15:30.297253207-03:00"
     description: Sincronizador de cm e secs
     digest: 7242258ed0a74216a671b5d733f8afcf764822a5be11b0ced39d4a9a9aaf9a4f
     home: https://
@@ -484,7 +484,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 11.3.2
-    created: "2026-07-05T00:13:53.334082835-03:00"
+    created: "2026-07-05T00:15:30.299412469-03:00"
     dependencies:
     - name: common
       repository: https://adonaicosta.github.io/adonai-helm-charts
@@ -525,7 +525,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 1.6.28
-    created: "2026-07-05T00:13:53.33560775-03:00"
+    created: "2026-07-05T00:15:30.301501867-03:00"
     dependencies:
     - name: common
       repository: https://adonaicosta.github.io/adonai-helm-charts
@@ -563,7 +563,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.0.9
-    created: "2026-07-05T00:13:53.338377252-03:00"
+    created: "2026-07-05T00:15:30.303558165-03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -605,7 +605,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.3.0
-    created: "2026-07-05T00:13:53.341681643-03:00"
+    created: "2026-07-05T00:15:30.306770015-03:00"
     dependencies:
     - name: common
       repository: https://adonaicosta.github.io/adonai-helm-charts
@@ -637,7 +637,7 @@ entries:
   prometheus-msteams:
   - apiVersion: v1
     appVersion: v1.5.2
-    created: "2026-07-05T00:13:53.342010423-03:00"
+    created: "2026-07-05T00:15:30.307134738-03:00"
     description: A Helm chart for Kubernetes
     digest: 1e2f122fed02fd1f34630bf768b09b220473e12335e06fa2a2459c516f1a10ca
     home: https://github.com/prometheus-msteams/prometheus-msteams
@@ -659,7 +659,7 @@ entries:
   proxmox-csi-plugin:
   - apiVersion: v2
     appVersion: v0.18.0
-    created: "2026-07-05T00:13:53.342892174-03:00"
+    created: "2026-07-05T00:15:30.307919123-03:00"
     description: Container Storage Interface plugin for Proxmox
     digest: 633f76d95d48ba3e5177376670d77570bc59bce8a588ca085c94f5d16f56f61e
     home: https://github.com/sergelogvinov/proxmox-csi-plugin
@@ -698,7 +698,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 8.2.0
-    created: "2026-07-05T00:13:53.352345971-03:00"
+    created: "2026-07-05T00:15:30.314774636-03:00"
     dependencies:
     - name: common
       repository: https://adonaicosta.github.io/adonai-helm-charts
@@ -728,7 +728,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.2.7
-    created: "2026-07-05T00:13:53.346283757-03:00"
+    created: "2026-07-05T00:15:30.310668268-03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -769,7 +769,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.4.2
-    created: "2026-07-05T00:13:53.356729805-03:00"
+    created: "2026-07-05T00:15:30.317128987-03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -795,10 +795,21 @@ entries:
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/redis-cluster-11.4.3.tgz
     version: 11.4.3
+  templater:
+  - apiVersion: v2
+    appVersion: 1.3.1
+    created: "2026-07-05T00:15:30.317244927-03:00"
+    description: A Helm chart for Kubernetes
+    digest: 9419118955023ae8c8e1715f1a3c09502317558165c5a970e14ef67610febb3c
+    name: templater
+    type: application
+    urls:
+    - https://adonaicosta.github.io/adonai-helm-charts/templater-1.3.1.tgz
+    version: 1.3.1
   temporal:
   - apiVersion: v2
     appVersion: 1.23.0
-    created: "2026-07-05T00:13:53.3697887-03:00"
+    created: "2026-07-05T00:15:30.329057391-03:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -837,7 +848,7 @@ entries:
     version: 0.36.0
   - apiVersion: v2
     appVersion: 1.22.6
-    created: "2026-07-05T00:13:53.363484922-03:00"
+    created: "2026-07-05T00:15:30.323238867-03:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -885,7 +896,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.34.1
-    created: "2026-07-05T00:13:53.378324162-03:00"
+    created: "2026-07-05T00:15:30.337266661-03:00"
     dependencies:
     - condition: minio.enabled
       name: minio
@@ -929,7 +940,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.5.4
-    created: "2026-07-05T00:13:53.383763574-03:00"
+    created: "2026-07-05T00:15:30.343129425-03:00"
     dependencies:
     - condition: memcached.enabled
       name: memcached
@@ -967,4 +978,4 @@ entries:
     urls:
     - https://adonaicosta.github.io/adonai-helm-charts/wordpress-22.4.11.tgz
     version: 22.4.11
-generated: "2026-07-05T00:13:53.304085718-03:00"
+generated: "2026-07-05T00:15:30.274532076-03:00"
