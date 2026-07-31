@@ -54,35 +54,20 @@ spec:
           command:
             {{- toYaml . | nindent 12 }}
           {{- end }}
+          {{- $envKeyRefs := include "basic-deployment.envKeyRefs" . | trim }}
+          {{- if or .Values.env $envKeyRefs }}
           env:
-            {{- toYaml .Values.env | nindent 12 }}
-
-      {{- if .Values.envFrom }}
+            {{- with .Values.env }}
+            {{- toYaml . | nindent 12 }}
+            {{- end }}
+            {{- with $envKeyRefs }}
+            {{- . | nindent 12 }}
+            {{- end }}
+          {{- end }}
+          {{- with include "basic-deployment.envFrom" . | trim }}
           envFrom:
-        {{- range $i, $v := .Values.envFrom.configMaps }}
-           {{- if $v.data }}
-          - configMapRef:
-              name: {{ include "basic-deployment.name" $ }}-config-env-{{ default $i $v.name }}
-              optional: {{ default false $v.optional }}
-           {{ else if $v.name }}
-          - configMapRef:
-              name: {{ $v.name }}
-              optional: {{ default false $v.optional }}
-           {{- end }}
-        {{- end }}
-        {{- range $i, $v := .Values.envFrom.secrets }}
-           {{- if $v.data }}
-          - secretRef:
-              name: {{ include "basic-deployment.name" $ }}-secret-env-{{ default $i $v.name }}
-              optional: {{ default false $v.optional }}
-           {{ else if $v.name }}
-          - secretRef:
-              name: {{ $v.name }}
-              optional: {{ default false $v.optional }}
-           {{- end }}
-        {{- end }}
-     {{- end }}
-
+            {{- . | nindent 12 }}
+          {{- end }}
           {{ if not (eq (.Values.containerPort|int) 0) }}
           ports:
           - name: http

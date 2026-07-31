@@ -1,0 +1,78 @@
+env:
+- name: PLAIN
+  value: "1"
+
+envFrom:
+  configMaps:
+  - name: whole-cm
+    optional: true
+  - data:
+      GEN1: v1
+      GEN2: v2
+  - name: named-gen
+    data:
+      GEN3: v3
+  - name: partial-cm
+    keys:
+    - K1
+    - K2
+  - name: renamed-cm
+    optional: true
+    keys:
+      APP_LOG_LEVEL: log.level
+  secrets:
+  - name: whole-secret
+  - data:
+      USERNAME: alice
+      PORT: 8080
+  - name: partial-secret
+    keys:
+    - PASSWORD
+  - name: renamed-secret
+    keys:
+      DB_PASSWORD: password
+
+autoscaling:
+  enabled: true
+  type: keda
+  minReplicas: 2
+  maxReplicas: 20
+  pollingInterval: 15
+  cooldownPeriod: 120
+  idleReplicaCount: 0
+  fallback:
+    failureThreshold: 3
+    replicas: 2
+  advanced:
+    horizontalPodAutoscalerConfig:
+      behavior:
+        scaleDown:
+          stabilizationWindowSeconds: 300
+  triggers:
+  - type: cpu
+    metricType: Utilization
+    metadata:
+      value: "80"
+  - type: rabbitmq
+    metadata:
+      queueName: myqueue
+      mode: QueueLength
+      value: "100"
+    authenticationRef:
+      name: my-trigger-auth
+
+extraObjects:
+- apiVersion: keda.sh/v1alpha1
+  kind: TriggerAuthentication
+  metadata:
+    name: my-trigger-auth
+  spec:
+    secretTargetRef:
+    - parameter: host
+      name: '{{ .Release.Name }}-secret'
+      key: rabbitmq-host
+- |
+  apiVersion: v1
+  kind: ServiceAccount
+  metadata:
+    name: {{ include "basic-deployment.name" . }}-extra

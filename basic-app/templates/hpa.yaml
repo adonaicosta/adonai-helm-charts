@@ -1,4 +1,4 @@
-{{- if .Values.autoscaling.enabled -}}
+{{- if and .Values.autoscaling.enabled (eq (default "hpa" .Values.autoscaling.type) "hpa") -}}
 apiVersion: {{ ternary "autoscaling/v2" "autoscaling/v1" (.Capabilities.APIVersions.Has "autoscaling/v2") }}
 kind: HorizontalPodAutoscaler
 metadata:

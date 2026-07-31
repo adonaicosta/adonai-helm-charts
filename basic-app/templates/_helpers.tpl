@@ -66,3 +66,66 @@ Create the name of the service account to use
     "default"
   {{- end }}
 {{- end }}
+
+{{/*
+envFrom entries (whole ConfigMap/Secret). Entries carrying `keys` are skipped
+here, they are rendered as single-key env vars by basic-deployment.envKeyRefs.
+*/}}
+{{- define "basic-deployment.envFrom" -}}
+{{- $root := . -}}
+{{- range $i, $v := (.Values.envFrom | default dict).configMaps }}
+{{- if not $v.keys }}
+{{- if $v.data }}
+- configMapRef:
+    name: {{ include "basic-deployment.name" $root }}-config-env-{{ default $i $v.name }}
+    optional: {{ default false $v.optional }}
+{{- else if $v.name }}
+- configMapRef:
+    name: {{ $v.name }}
+    optional: {{ default false $v.optional }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{- range $i, $v := (.Values.envFrom | default dict).secrets }}
+{{- if not $v.keys }}
+{{- if $v.data }}
+- secretRef:
+    name: {{ include "basic-deployment.name" $root }}-secret-env-{{ default $i $v.name }}
+    optional: {{ default false $v.optional }}
+{{- else if $v.name }}
+- secretRef:
+    name: {{ $v.name }}
+    optional: {{ default false $v.optional }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{/*
+Single-key env vars from envFrom.{configMaps,secrets}[].keys.
+`keys` accepts a list (env var named after the key) or a map (ENV_NAME: key).
+*/}}
+{{- define "basic-deployment.envKeyRefs" -}}
+{{- $root := . -}}
+{{- $sources := list
+      (dict "items" (.Values.envFrom | default dict).configMaps "ref" "configMapKeyRef" "suffix" "config")
+      (dict "items" (.Values.envFrom | default dict).secrets    "ref" "secretKeyRef"    "suffix" "secret") -}}
+{{- range $src := $sources }}
+{{- range $i, $v := $src.items }}
+{{- if $v.keys }}
+{{- $name := $v.name -}}
+{{- if $v.data }}{{- $name = printf "%s-%s-env-%v" (include "basic-deployment.name" $root) $src.suffix (default $i $v.name) -}}{{- end }}
+{{- $keys := dict -}}
+{{- if kindIs "map" $v.keys }}{{- $keys = $v.keys -}}{{- else }}{{- range $v.keys }}{{- $_ := set $keys . . -}}{{- end }}{{- end }}
+{{- range $envName, $key := $keys }}
+- name: {{ $envName }}
+  valueFrom:
+    {{ $src.ref }}:
+      name: {{ $name }}
+      key: {{ $key }}
+      optional: {{ default false $v.optional }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end }}

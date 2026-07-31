@@ -1,12 +1,13 @@
-{{- if .Values.envFrom }}
-{{- range $i, $v := .Values.envFrom.configMaps }}
+{{- range $i, $v := (.Values.envFrom | default dict).configMaps }}
 {{- if $v.data }}
+---
 apiVersion: v1
 kind: ConfigMap
 metadata:
   name: {{ include "basic-deployment.name" $ }}-config-env-{{ default $i $v.name }}
+  labels:
+    {{- include "basic-deployment.labels" $ | nindent 4 }}
 data:
   {{- toYaml $v.data | nindent 2 }}
-{{- end }}
 {{- end }}
 {{- end }}

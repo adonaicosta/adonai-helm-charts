@@ -30,3 +30,6 @@ id_ecdsa
 *.pem
 *.crt
 *.key
+
+# chart tests, not shipped
+tests/

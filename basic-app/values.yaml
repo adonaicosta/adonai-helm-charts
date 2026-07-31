@@ -14,7 +14,7 @@ image:
   tag: "latest"
   pullPolicy: IfNotPresent
 
-# priorityClassName: 
+# priorityClassName:
 
 #strategy:
 # this is Default
@@ -31,15 +31,32 @@ image:
 # args: []
 
 env: []
+#- name: MYVAR
+#  value: myvalue
+#- name: FROM_ANY_SOURCE
+#  valueFrom:
+#    fieldRef:
+#      fieldPath: metadata.name
 
 envFrom: {}
 #  configMaps:
+#  # whole existing ConfigMap
 #  - name: myconfig
 #    optional: false
+#  # ConfigMap created by this chart
 #  - data:
 #      MYVAR1: myvalue-1
 #      MYVAR2: myvalue-2
 #    optional: false
+#  # only some keys of an existing ConfigMap (list: env var named after the key)
+#  - name: myconfig
+#    keys:
+#    - MYVAR1
+#    - MYVAR2
+#  # only some keys, renaming them (map: ENV_VAR_NAME: key-in-the-configmap)
+#  - name: myconfig
+#    keys:
+#      APP_LOG_LEVEL: log.level
 #  secrets:
 #  - name: mysecret
 #    optional: false
@@ -47,6 +64,13 @@ envFrom: {}
 #      USERNAME: plaintext-username
 #      PASSWORD: plaintext-password
 #    optional: false
+#  # only some keys of an existing Secret
+#  - name: mysecret
+#    keys:
+#    - PASSWORD
+#  - name: mysecret
+#    keys:
+#      DB_PASSWORD: password
 
 imagePullSecrets: []
 
@@ -82,7 +106,7 @@ resources: {}
 extraContainers: []
 #- env:
 #  - name: key
-#    value: value 
+#    value: value
 #  name: web
 #  image: alpine:latest
 #  imagePullPolicy: IfNotPresent
@@ -101,7 +125,7 @@ extraContainers: []
 #  volumeMounts: []
 #- env:
 #  - name: key
-#    value: value 
+#    value: value
 #  name: web2
 #  image: alpine:latest
 #  imagePullPolicy: IfNotPresent
@@ -122,10 +146,10 @@ extraContainers: []
 initContainers: []
 #- env:
 #  - name: key
-#    value: value 
+#    value: value
 #  name: init1
 #  image: alpine:latest
-#  command: 
+#  command:
 #  - /bin/sleep
 #  args:
 #  - 10s
@@ -138,11 +162,11 @@ initContainers: []
 #  volumeMounts: []
 #- env:
 #  - name: key
-#    value: value 
+#    value: value
 #  name: init2
 #  image: alpine:latest
 #  imagePullPolicy: IfNotPresent
-#  command: 
+#  command:
 #  - /bin/sleep
 #  args:
 #  - 10s
@@ -153,16 +177,59 @@ initContainers: []
 #  securityContext: {}
 #  volumeMounts: []
 
-################
-##    HPA     ##
-################
+#########################
+##  HPA / KEDA         ##
+#########################
 
 autoscaling:
   enabled: false
+  # hpa (default) or keda
+  type: hpa
   minReplicas: 1
   maxReplicas: 10
+
+  ## type: hpa
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
+
+  ## type: keda -> https://keda.sh/docs/latest/reference/scaledobject-spec/
+  # annotations: {}
+  # pollingInterval: 30
+  # cooldownPeriod: 300
+  # idleReplicaCount: 0
+  # fallback:
+  #   failureThreshold: 3
+  #   replicas: 2
+  # advanced:
+  #   horizontalPodAutoscalerConfig:
+  #     behavior:
+  #       scaleDown:
+  #         stabilizationWindowSeconds: 300
+  # triggers:
+  # - type: cpu
+  #   metricType: Utilization
+  #   metadata:
+  #     value: "80"
+  # - type: memory
+  #   metricType: Utilization
+  #   metadata:
+  #     value: "80"
+  # - type: prometheus
+  #   name: prometheus-rps
+  #   metricType: Value
+  #   metadata:
+  #     metricName: rps
+  #     serverAddress: http://prometheus.monitoring.svc.cluster.local:9090
+  #     threshold: "20"
+  #     query: round(round(sum(irate(http_responses_total{proxy='deploy-prefix_http-default'}[1m])))/count(kube_pod_info{pod=~'deploy-prefix-[a-zA-Z0-9]{0,10}-[a-zA-Z0-9]{0,5}'}))
+  # - type: rabbitmq
+  #   name: rabbitmq1
+  #   metadata:
+  #     queueName: myqueue
+  #     mode: QueueLength
+  #     value: "100"
+  #   authenticationRef:
+  #     name: my-trigger-auth   # create it via extraObjects
 
 nodeSelector: {}
 
@@ -290,6 +357,39 @@ serviceMonitor:
   # tlsConfig: {}
   # relabelings: []
   # metricRelabelings: []
+
+###################
+##  extraObjects ##
+###################
+
+# Arbitrary manifests (any CRD) rendered as-is. Each item goes through `tpl`,
+# so you can use {{ }} against the release context. Items can be a map or a
+# multi-line string.
+extraObjects: []
+#- apiVersion: keda.sh/v1alpha1
+#  kind: TriggerAuthentication
+#  metadata:
+#    name: my-trigger-auth
+#  spec:
+#    secretTargetRef:
+#    - parameter: host
+#      name: '{{ .Release.Name }}-secret'
+#      key: rabbitmq-host
+#- |
+#  apiVersion: v1
+#  kind: ServiceAccount
+#  metadata:
+#    name: {{ include "basic-deployment.name" . }}-extra
+#- |
+# apiVersion: v1
+# stringData:
+#   a: b
+# kind: Secret
+# metadata:
+#   name: test
+#   namespace: diferent
+
+
 
 hooks: []
 #- name: migrate-db
