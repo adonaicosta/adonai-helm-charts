@@ -16,6 +16,8 @@ image:
 
 # priorityClassName:
 
+# terminationGracePeriodSeconds: 30
+
 #strategy:
 # this is Default
 #  rollingUpdate:
@@ -72,6 +74,14 @@ envFrom: {}
 #    keys:
 #      DB_PASSWORD: password
 
+serviceAccount:
+  # When true, creates a ServiceAccount. Name defaults to <release>-basic-app;
+  # set name to override (e.g. to match a GKE Workload Identity binding).
+  create: false
+  name: ""
+  annotations: {}
+  #  iam.gke.io/gcp-service-account: myapp@myproject.iam.gserviceaccount.com
+
 imagePullSecrets: []
 
 #- name: azure-container-registry-credentials
@@ -90,6 +100,12 @@ securityContext: {}
   #   - ALL
 
 containerPort: 8080
+
+# extra ports declared on the main container (in addition to containerPort)
+extraContainerPorts: []
+#- name: health
+#  containerPort: 8081
+#  protocol: TCP
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
@@ -239,6 +255,7 @@ affinity: {}
 
 livenessProbe: null
 readinessProbe: null
+startupProbe: null
 
 
 
@@ -284,6 +301,8 @@ storage:
   enabled: false
   storageClassName: default
   size: 10Gi
+  # set mountPath: "" to create the PVC/volume without mounting it in the main
+  # container (mount it from an extraContainer via name: <release>-data)
   mountPath: /data
   volumeMode: Filesystem
   accessModes:

@@ -26,6 +26,9 @@ spec:
       labels:
         {{- include "basic-deployment.selectorLabels" . | nindent 8 }}
     spec:
+    {{- with .Values.terminationGracePeriodSeconds }}
+      terminationGracePeriodSeconds: {{ . }}
+    {{- end }}
     {{- if .Values.priorityClassName }}
       priorityClassName: {{ .Values.priorityClassName }}
     {{- end }}
@@ -68,14 +71,22 @@ spec:
           envFrom:
             {{- . | nindent 12 }}
           {{- end }}
-          {{ if not (eq (.Values.containerPort|int) 0) }}
+          {{ if or (not (eq (.Values.containerPort|int) 0)) .Values.extraContainerPorts }}
           ports:
+          {{- if not (eq (.Values.containerPort|int) 0) }}
           - name: http
             containerPort: {{ .Values.containerPort|int }}
             protocol: TCP
           {{- end }}
+          {{- with .Values.extraContainerPorts }}
+          {{- toYaml . | nindent 10 }}
+          {{- end }}
+          {{- end }}
           livenessProbe: {{- toYaml .Values.livenessProbe | nindent 12 }}
           readinessProbe: {{- toYaml .Values.readinessProbe | nindent 12 }}
+          {{- with .Values.startupProbe }}
+          startupProbe: {{- toYaml . | nindent 12 }}
+          {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
@@ -94,7 +105,7 @@ spec:
             - mountPath: {{ .Values.configMap.mountPath }}
               name: {{ .Release.Name }}-config
      {{- end }}
-     {{- if .Values.storage.enabled }}
+     {{- if and .Values.storage.enabled .Values.storage.mountPath }}
             - mountPath: {{ .Values.storage.mountPath }}
               name: {{ .Release.Name }}-data
      {{- end }}

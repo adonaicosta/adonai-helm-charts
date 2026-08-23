@@ -36,4 +36,25 @@ hasnt "env:"
 
 ! render --set autoscaling.enabled=true --set autoscaling.type=keda 2>/dev/null   # triggers required
 
+OUT=$(render --set serviceAccount.create=true --set serviceAccount.name=mysa \
+             --set storage.enabled=true --set storage.mountPath= \
+             --set terminationGracePeriodSeconds=10)
+has "kind: ServiceAccount"
+has "serviceAccountName: mysa"
+has "terminationGracePeriodSeconds: 10"
+has "claimName: myapp-data"                           # empty mountPath: volume/PVC still created
+hasnt "mountPath: /data"                              # ...but not mounted in the main container
+
+OUT=$(render --set-json 'startupProbe={"httpGet":{"path":"/livez","port":8081}}' \
+             --set-json 'extraContainerPorts=[{"name":"health","containerPort":8081,"protocol":"TCP"}]')
+yq -e 'true' >/dev/null <<<"$OUT"
+has "startupProbe:"
+has "name: health"
+OUT=$(render --set containerPort=0 \
+             --set-json 'extraContainerPorts=[{"name":"health","containerPort":8081,"protocol":"TCP"}]')
+has "containerPort: 8081"                             # extra ports render even without main port
+hasnt "containerPort: 8080"
+OUT=$(render --set containerPort=0)                   # no ports at all -> key omitted
+[[ $(yq 'select(.kind=="Deployment") | .spec.template.spec.containers[0] | has("ports")' <<<"$OUT") == "false" ]]
+
 echo "ok"
